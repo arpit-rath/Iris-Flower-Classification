@@ -21,7 +21,6 @@ htmlcov/
 .matplotlib/
 
 # Generated project artifacts
-models/*.joblib
 outputs/*.csv
 
 # Editor and operating-system files

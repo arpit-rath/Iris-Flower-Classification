@@ -28,6 +28,7 @@ Dataset source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/da
 
 ```text
 Iris-Flower-Classification/
+|-- models/                # Saved fitted model bundle
 |-- notebooks/             # Exploratory analysis and model development
 |-- outputs/               # Generated plots and evaluation results
 |-- src/iris_classifier/   # Reusable project code
@@ -76,3 +77,35 @@ The data is divided into an 80% training set and a 20% test set with stratified
 sampling. Logistic Regression, Decision Tree, and K-Nearest Neighbors are
 compared using five-fold stratified cross-validation on the training data. The
 held-out test set is reserved for the final evaluation.
+
+## Results
+
+All three candidates reached a mean five-fold training-set validation accuracy
+of 95.83%. Logistic Regression was selected using the documented simplicity
+tie-break and then fitted on all 120 training samples.
+
+On the previously held-out 30-sample test set, the selected model achieved:
+
+- **Accuracy:** 93.33% (28 of 30 predictions correct)
+- **Setosa:** 10 of 10 correct
+- **Versicolor:** 9 of 10 correct; one predicted as Virginica
+- **Virginica:** 9 of 10 correct; one predicted as Versicolor
+
+## Generated artifacts
+
+- `outputs/pairplot.png`
+- `outputs/correlation_heatmap.png`
+- `outputs/model_comparison.png`
+- `outputs/confusion_matrix.png`
+- `outputs/coefficient_heatmap.png`
+- `models/iris_classifier.joblib`
+
+The saved model bundle contains the fitted preprocessing and classifier
+pipeline, feature order, and species labels.
+
+## Limitations
+
+The dataset contains only 150 observations, and the final test set contains 30
+flowers. One prediction therefore changes the reported accuracy by 3.33
+percentage points. The result demonstrates the project workflow and should not
+be treated as evidence of performance on broader real-world flower populations.

@@ -13,6 +13,16 @@ from iris_classifier.eda import (
     create_correlation_heatmap,
     create_pairplot,
 )
+from iris_classifier.evaluation import (
+    EvaluationResult,
+    create_coefficient_heatmap,
+    create_confusion_matrix_plot,
+    evaluate_model,
+    extract_standardized_coefficients,
+    load_model_bundle,
+    predict_species,
+    save_model_bundle,
+)
 from iris_classifier.modeling import (
     build_model_candidates,
     compare_models,
@@ -32,6 +42,14 @@ __all__ = [
     "correlation_matrix",
     "create_correlation_heatmap",
     "create_pairplot",
+    "EvaluationResult",
+    "create_coefficient_heatmap",
+    "create_confusion_matrix_plot",
+    "evaluate_model",
+    "extract_standardized_coefficients",
+    "load_model_bundle",
+    "predict_species",
+    "save_model_bundle",
     "build_model_candidates",
     "compare_models",
     "create_model_comparison_plot",
