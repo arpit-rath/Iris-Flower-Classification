@@ -13,6 +13,14 @@ from iris_classifier.eda import (
     create_correlation_heatmap,
     create_pairplot,
 )
+from iris_classifier.modeling import (
+    build_model_candidates,
+    compare_models,
+    create_model_comparison_plot,
+    select_best_model_name,
+    split_dataset,
+    train_selected_model,
+)
 
 __all__ = [
     "FEATURE_COLUMNS",
@@ -24,4 +32,10 @@ __all__ = [
     "correlation_matrix",
     "create_correlation_heatmap",
     "create_pairplot",
+    "build_model_candidates",
+    "compare_models",
+    "create_model_comparison_plot",
+    "select_best_model_name",
+    "split_dataset",
+    "train_selected_model",
 ]

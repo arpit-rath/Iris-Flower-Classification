@@ -69,3 +69,10 @@ python -m pytest
 2. Exploratory data analysis and visualizations
 3. Model training and comparison
 4. Evaluation, interpretation, and final documentation
+
+## Modeling approach
+
+The data is divided into an 80% training set and a 20% test set with stratified
+sampling. Logistic Regression, Decision Tree, and K-Nearest Neighbors are
+compared using five-fold stratified cross-validation on the training data. The
+held-out test set is reserved for the final evaluation.
