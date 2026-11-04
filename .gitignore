@@ -11,15 +11,17 @@ venv/
 
 # Test and coverage output
 .pytest_cache/
+.pytest_tmp/
 .coverage
 htmlcov/
 
 # Jupyter files
 .ipynb_checkpoints/
+.jupyter/
+.matplotlib/
 
 # Generated project artifacts
 models/*.joblib
-outputs/*.png
 outputs/*.csv
 
 # Editor and operating-system files

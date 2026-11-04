@@ -51,6 +51,12 @@ Install the project dependencies:
 python -m pip install -r requirements.txt
 ```
 
+Launch JupyterLab and open `notebooks/iris_classification.ipynb`:
+
+```powershell
+python -m jupyter lab
+```
+
 Run the automated tests:
 
 ```powershell

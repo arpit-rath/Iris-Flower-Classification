@@ -8,6 +8,11 @@ from iris_classifier.data import (
     summarize_dataset,
     validate_iris_dataframe,
 )
+from iris_classifier.eda import (
+    correlation_matrix,
+    create_correlation_heatmap,
+    create_pairplot,
+)
 
 __all__ = [
     "FEATURE_COLUMNS",
@@ -16,4 +21,7 @@ __all__ = [
     "load_iris_dataframe",
     "summarize_dataset",
     "validate_iris_dataframe",
+    "correlation_matrix",
+    "create_correlation_heatmap",
+    "create_pairplot",
 ]
